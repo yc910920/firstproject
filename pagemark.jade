@@ -1,0 +1,19 @@
+ul#secondUl.page-mark(ng-show="!showChoicePage")
+    li.title
+        span 整题
+    li(ng-click="rightClick()")
+        img(ng-src="{{flag === 'bigRight' ? './assets/image/homework/rightt.png' : './assets/image/homework/check.png'}}")
+    li(ng-click="wrongClick(quesionKnowlege,item)")
+        img(ng-src="{{flag === 'bigWrong' ? './assets/image/homework/wrong.png':'./assets/image/homework/cross.png'}}")
+    li.title.left
+        span 步骤
+    li(ng-click="successClick()")
+        img(ng-src="{{flag === 'right' ? './assets/image/homework/rightt.png':'./assets/image/homework/check.png'}}")
+    li(ng-click="errorClick()")
+        img(ng-src="{{flag === 'error' ? './assets/image/homework/wrong.png':'./assets/image/homework/cross.png'}}")
+    li(ng-click="helpClick()")
+        img(ng-src="{{flag === 'help' ? './assets/image/homework/help1.png':'./assets/image/homework/help.png'}}")
+    li(ng-click="wrightClick()")
+        img(ng-src="{{flag === 'wright' ? './assets/image/homework/wright.png':'./assets/image/homework/wright-white.png'}}")
+    li(ng-click="textClick()")
+        img(ng-src="{{flag === 'font' ? './assets/image/homework/font1.png':'./assets/image/homework/font.png'}}")
