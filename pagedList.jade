@@ -1,9 +1,0 @@
-div.value(ng-click="handleSelect($event)")
-    span(ng-bind="current.name")
-    i.icon.icon-arrow-down(ng-if="!show")
-    i.icon.icon-arrow-top(ng-if="show")
-    
-div.contentbox(ng-if="show",ng-click="stop($event)")
-    .item(ng-repeat="data in datas",ng-click="navTo(data)")
-        span(ng-bind="data.name")
-    div(pagebar="select",change="paged(value)",pagesize="pageSize",total="total",current="currentPage")
